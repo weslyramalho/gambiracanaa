@@ -2,11 +2,11 @@ import React from 'react';
 import { useState } from 'react';
 import { ErrorMesssage, PageContainer, PageTitle } from '../../components/MainComponents';
 import { PageArea } from './styled';
-import useAPI from '../../helpers/OlxAPI';
+import useAPI from '../../helpers/GambiraCanaaApi';
 import { doLogin } from '../../helpers/AuthHandler';
 
 
-export default function SignIn () {
+const SignIn = () => {
     const api = useAPI();
 
     const [email, setEmail] = useState('');
@@ -18,15 +18,17 @@ export default function SignIn () {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setDisabled(true);
+        setError('');
 
         const json = await api.login(email, password);
 
-        if(json.error) {
+       if(json.error) {
             setError(json.error);
         }else{
             doLogin(json.token, rememberPassword);
             window.location.href='/';
         }
+        window.location.href='/';
 
         setDisabled(false);
 
@@ -90,3 +92,5 @@ export default function SignIn () {
 
     )
 }
+
+export default SignIn;

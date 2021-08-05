@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const HeaderArea = styled.div`
 height: 60px;
-background-color: #FFF;
+background-color: #E2C547;
 border-bottom: 1px solid #CCC;
 
 .container {
@@ -19,14 +19,15 @@ a {
     flex: 1;
     display: flex;
     align-items: center;
-    height: 60px;
+    height: 3rem;
+    width: 3.75em;
 
-    .logo-1,
-    .logo-2,
-    .logo-3 {
-        font-size: 27px;
-        font-weight: bold;
+    img{
+        width: 20rem;
+        height: 20rem;
     }
+
+   
     .logo-1{ color:#FF0000; }
     .logo-2{ color:#00FF00; }
     .logo-3{ color:#0000FF; }
@@ -67,7 +68,7 @@ nav {
             }
 
             &.button {
-                background-color:#FF8100;
+                background-color:#38732F;
                 border-radius:4px;
                 color:#FFF;
                 padding:5px 10px;
