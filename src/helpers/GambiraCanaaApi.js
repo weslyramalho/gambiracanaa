@@ -70,11 +70,12 @@ const GambiraCanaaApi = {
         return json.states;
     },
 
-    getAds: async () => {
+    getAds: async (options) => {
         const json = await apiFetchGet(
-            '/ads'
+            '/ad/list',
+            options
         );
-        return json.ads
+        return json;
     },
 
     getCategories: async() => {
@@ -82,6 +83,14 @@ const GambiraCanaaApi = {
             '/categories'
         );
         return json.categories
+    },
+
+    getAd:async (id, other = false) =>{
+        const json = await apiFetchGet(
+            '/ad/item',
+            {id, other}
+        );
+        return json;
     }
 
 };

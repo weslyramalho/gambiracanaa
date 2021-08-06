@@ -81,6 +81,7 @@ const Page = () => {
                     )}
                 </div>
                 <Link to="/ads" className="seeAllLink">Ver todos</Link>
+                <hr />
             </PageArea>
         </PageContainer>
         </>
