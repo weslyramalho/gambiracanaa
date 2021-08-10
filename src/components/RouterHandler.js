@@ -12,7 +12,9 @@ export default({children, ...rest}) => {
         <Route
         {...rest}
         render={()=>
-            authorized ? children: <Redirect to="/signin"/>
-        }
-    )
+            authorized ? children: <Redirect to="/signin" />
+        }            
+            />
+        
+    );
 }
