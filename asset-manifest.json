@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/gambiracanaa/static/css/main.90ebbc65.chunk.css",
+    "main.js": "/gambiracanaa/static/js/main.b1ca3fe1.chunk.js",
+    "main.js.map": "/gambiracanaa/static/js/main.b1ca3fe1.chunk.js.map",
+    "runtime-main.js": "/gambiracanaa/static/js/runtime-main.49353929.js",
+    "runtime-main.js.map": "/gambiracanaa/static/js/runtime-main.49353929.js.map",
+    "static/js/2.d0dc403a.chunk.js": "/gambiracanaa/static/js/2.d0dc403a.chunk.js",
+    "static/js/2.d0dc403a.chunk.js.map": "/gambiracanaa/static/js/2.d0dc403a.chunk.js.map",
+    "index.html": "/gambiracanaa/index.html",
+    "static/css/main.90ebbc65.chunk.css.map": "/gambiracanaa/static/css/main.90ebbc65.chunk.css.map",
+    "static/js/2.d0dc403a.chunk.js.LICENSE.txt": "/gambiracanaa/static/js/2.d0dc403a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.49353929.js",
+    "static/js/2.d0dc403a.chunk.js",
+    "static/css/main.90ebbc65.chunk.css",
+    "static/js/main.b1ca3fe1.chunk.js"
+  ]
+}
